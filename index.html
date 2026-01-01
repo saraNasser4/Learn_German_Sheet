@@ -1,49 +1,30 @@
 <!DOCTYPE html>
-<html lang="du">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Deuatsch A1</title>
-</head>
-<body>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Deuatsch A1</title>
+    </head>
+    <body>
     <h1>Rezension für das Niveau A1</h1>
     <div>
         <h2>Wörter:</h2>
         <table border="1" cellpadding="8" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Article</th>
-      <th>Words</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Der</strong> (masculine)</td>
-      <td>Der Tisch, Der Nachbar, Der Lehrer, Der Anwalt, Der Architekt, Der IT-Experte, Der Sohn, Der Mann, Der Vater, Der Arzt, Der Verkäufer, Der Kellner, Der Taxifahrer</td>
-    </tr>
-
-    <tr>
-      <td><strong>Das</strong> (neutral)</td>
-      <td>Das Bett, Das Mädchen, Das Kind, Das Baby, Das Wohnzimmer, Das Schlafzimmer, Das Esszimmer, Das Regal</td>
-    </tr>
-
+            <thead>
                 <tr>
-                <td><strong>Die</strong> (feminine)</td>
-                <td>Die Couch, Die Nachbarin, Die Lehrerin, Die Anwältin, Die Architektin, Die IT-Expertin, Die Tochter, Die Frau, Die Mutter, Die Ärztin, Die Verkäuferin, Die Kellnerin, Die Taxifahrerin, Die Küche</td>
+                    <th>Article</th>
+                    <th>Words</th>
+                    <th>Count</th>
                 </tr>
-
-                <tr>
-                    <td><strong>Die</strong> (plural)</td>
-                    <td>Die Stühle,</td>
-                </tr>
-            </tbody>
-        </table>     
+            </thead>
+            <tbody id="tWords"></tbody>
+        </table>
     </div>
 
     <div>
         <h2>Sätze:</h2>
-        <ul>
+        `<ul>
             <li><strong>Na?</strong> ---/> So?</li>
             <li><strong>Ist alles in Ordnung?</strong> ---/> Is everything alright?</li>
             <li><strong>Ich gehe morgen nach Frankfurt.</strong></li>
@@ -53,52 +34,60 @@
             <li><strong>Du studierst Deutsch mit Theo.</strong> ---/> X</li>
             <li><strong>Du lernst Deutsch mit Theo.</strong> ---/> /</li>
             <li><strong>Sie wohnen in der Stadionstraße in Hamburg.</strong></li>
-            <li><strong>Sie liest gern und geht oft spazieren.</strong> ---/> She likes reading and often goes for walks.</li>
+            <li><strong>Sie liest gern und geht oft spazieren.</strong> ---/> She likes reading and often goes forwalks.</li>
             <li><strong>Sie liest nicht gern.</strong></li>
-            <li><strong>Was bist do von Beruf?</strong> ---/> Ich bin Buchhalterin., Ich bin Buchhalterin von Beruf., Ich arbeite als Buchhalterin.</li>
+            <li><strong>Was bist do von Beruf?</strong> ---/> Ich bin Buchhalterin., Ich bin Buchhalterin von Beruf.,
+                Ich arbeite als Buchhalterin.</li>
             <li><strong>Seit wann wohnt ihr in Deutschland?</strong></li>
             <li><strong>Wie arbeiten beide in Frankfurt.</strong> ---/> Both of us works in Frankfurt</li>
             <li><strong>Arbeitet ihr heute nicht?</strong></li>
             <li><strong>Was machst du gern in deiner Freizeit?</strong></li>
-            <li><strong>Sarahs Wohnun is seher klein, aber seher schön. Sie (for the wohnung) hat ein Wohnzimmer, eine Küche und ein Schlafzimmer.</strong></li>
+            <li><strong>Sarahs Wohnun is seher klein, aber seher schön. Sie (for the wohnung) hat ein Wohnzimmer, eine
+                    Küche und ein Schlafzimmer.</strong></li>
             <li><strong>Vater hat jetzt leider keine Zeit, aber er kommt vielleicht nächsten Monat.</strong></li>
             <li><strong>Sie bleibt eine Woche in Hamburg.</strong> ---/> She's staying in Hamburg for a week.</li>
             <li><strong>Habt ihr heute Zeit?</strong></li>
-            <li><strong>Sie kommt aus Wien und (sie 'not mandatory') ist Architektin von Beruf.</li>
+            <li><strong>Sie kommt aus Wien und (sie 'not mandatory') ist Architektin von Beruf.</strong></li>
+            <li><strong>Es geht mir auch gut === Auch gut</strong></li>
+            <li><strong>Die sind Stühle. Sie sind sehr schön.</strong> ---/> X</li>
+            <li><strong>Das sind Stühle. Sie sind sehr schön.</strong> ---/> /</li>
+            <li><strong>Sarah hat aktuell keine Arbeit.</strong> --/> Sarah currently has no work.</li>
+            <li><strong>Ich habe jetzt leider keine Zeit. == Leider habe ich jetzt keine Zeit. == Jetzt habe iche leider
+                    keine Zeit. == Ich habe leider jetzt keine Zeit.</strong></li>
         </ul>
     </div>
 
     <div>
         <h2>Artikel, die auf dem Fall basieren:</h2>
-        <table border="1" cellpadding="8" cellspacing="0">                      
+        <table border="1" cellpadding="8" cellspacing="0">
             <tbody>
                 <tr>
-                <td>Nominative</td>
-                <td>der</td>
-                <td>das</td>
-                <td>die</td>
-                <td>die</td>
+                    <td>Nominative</td>
+                    <td>der</td>
+                    <td>das</td>
+                    <td>die</td>
+                    <td>die</td>
                 </tr>
                 <tr>
-                <td>Accusative</td>
-                <td>den</td>
-                <td>das</td>
-                <td>die</td>
-                <td>die</td>
+                    <td>Accusative</td>
+                    <td>den</td>
+                    <td>das</td>
+                    <td>die</td>
+                    <td>die</td>
                 </tr>
                 <tr>
-                <td>Dative</td>
-                <td>dem</td>
-                <td>dem</td>
-                <td>der</td>
-                <td>den</td>
+                    <td>Dative</td>
+                    <td>dem</td>
+                    <td>dem</td>
+                    <td>der</td>
+                    <td>den</td>
                 </tr>
                 <tr>
-                <td>Genitive</td>
-                <td>des</td>
-                <td>des</td>
-                <td>der</td>
-                <td>der</td>
+                    <td>Genitive</td>
+                    <td>des</td>
+                    <td>des</td>
+                    <td>der</td>
+                    <td>der</td>
                 </tr>
             </tbody>
         </table>
@@ -113,30 +102,30 @@
                     <th>Indefinite Articles<br><small>(Unbestimmte Artikel)</small></th>
                     <th>Gender</th>
                 </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Der Mann</td>
-                <td>ein Mann</td>
-                <td>Masculine</td>
-            </tr>
-            <tr>
-                <td>Das Kind</td>
-                <td>ein Kind</td>
-                <td>Neutral</td>
-            </tr>
-            <tr>
-                <td>Die Frau</td>
-                <td>eine Frau</td>
-                <td>Feminine</td>
-            </tr>
-            <tr>
-                <td>Die Kinder</td>
-                <td>—</td>
-                <td>Plural</td>
-            </tr>
-  </tbody>
-</table>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Der Mann</td>
+                    <td>ein Mann</td>
+                    <td>Masculine</td>
+                </tr>
+                <tr>
+                    <td>Das Kind</td>
+                    <td>ein Kind</td>
+                    <td>Neutral</td>
+                </tr>
+                <tr>
+                    <td>Die Frau</td>
+                    <td>eine Frau</td>
+                    <td>Feminine</td>
+                </tr>
+                <tr>
+                    <td>Die Kinder</td>
+                    <td>—</td>
+                    <td>Plural</td>
+                </tr>
+            </tbody>
+        </table>
 
     </div>
 
@@ -149,12 +138,18 @@
             <li><strong>Studieren (V)</strong> ---/> only in university</li>
             <li><strong>Lernen (V)</strong> ---/> the other things</li>
             <li><strong>Spielen (V)</strong> ---/> with sports and instrumen 'Ich spiele sehr oft Tennis.'</li>
-            <li><strong>Auch and Nicht position</strong> ---/> Ich komme morgen <strong>auch/nicht</strong>. 'last position the general rule', Er spielt <strong>auch/nicht</strong> Fußball. 'split verb here so second last', Wir wohnen <strong>auch/nicht</strong> in Frankfurt. 'in front of prepositions', Es geht mir <strong>auch/nicht</strong> gut. 'in front of adjectives'</li>
+            <li><strong>Auch and Nicht position</strong> ---/> Ich komme morgen <strong>auch/nicht</strong>. 'last
+                position the general rule', Er spielt <strong>auch/nicht</strong> Fußball. 'split verb here so second
+                last', Wir wohnen <strong>auch/nicht</strong> in Frankfurt. 'in front of prepositions', Es geht mir
+                <strong>auch/nicht</strong> gut. 'in front of adjectives'</li>
             <li><strong>Genitiv-S mit Namen:</strong> ---/> Sarahs Wohnung == Die Wohnung von Sarah</li>
-            <li><strong>The main rule in German the verb comes in the second place ALWAYS</strong> ---/> Heute Komme ich nicht, aber morgen komme ich</li>
+            <li><strong>The main rule in German the verb comes in the second place ALWAYS</strong> ---/> Heute Komme ich
+                nicht, aber morgen komme ich</li>
+            <li><strong>When talking about professions, German usually drops the article:</strong> ---/> als Lehrerin
+                NOT als eine Lehrerin</li>
         </ul>
     </div>
-    
+
     <div>
         <h2>Aussprache:</h2>
         <h3>CH:</h3>
@@ -178,5 +173,9 @@
             <li>Pronounce in the middle of the tongue</li>
         </ul>
     </div>
+    <script type="module" src="js/script.js"></script>
+
+
 </body>
+
 </html>

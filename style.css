@@ -9,6 +9,11 @@
     line-height: normal; 
 }
 
+::selection {
+    background-color: #3be2ff;
+    color:#222222;
+}
+
 h1,
 h2,
 h3 {
@@ -43,3 +48,6 @@ td {
     border: 1px solid #858585;
 }
 
+.num {
+    text-align: center;
+}
