@@ -1,6 +1,8 @@
 import { articles } from './wordsData.js';
+import { sentences } from './sentencesData.js';
 
 const tbody = document.getElementById("tWords");
+const ulSentences = document.getElementById("ulSentences");
 
 articles.forEach(({ article, type, words }) => {
   const tr = document.createElement("tr");
@@ -13,3 +15,12 @@ articles.forEach(({ article, type, words }) => {
 
   tbody.appendChild(tr);
 });
+
+sentences.forEach((sentence)=> {
+  const li = document.createElement("li");
+
+  li.innerHTML = `
+    <strong>${sentence[0]}</strong>${sentence[1] !== undefined ? `→ ${sentence[1]}` : ""}
+  `;
+  ulSentences.appendChild(li);
+})
