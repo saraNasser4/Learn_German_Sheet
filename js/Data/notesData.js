@@ -9,4 +9,8 @@ export const notes = [
     ["Genitiv-S mit Namen", "Sarahs Wohnung == Die Wohnung von Sarah"],
     ["The main rule in German the verb comes in the second place ALWAYS", "Heute Komme ich nicht, aber morgen komme ich"],
     ["When talking about professions, German usually drops the article", "als Lehrerin. NOT als eine Lehrerin."],
+    ["Fahren === go/drive/ride", "Er bleibt 5 Tage und am Freitag fährt er wieder nach Hause."],
+    ["Denn", "To sound German add denn to any question", "Wo wohnt sie denn?"],
+    ["Hier === Here"],
+    ["Dort/Da === There"],
 ];

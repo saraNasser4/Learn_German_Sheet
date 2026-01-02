@@ -24,5 +24,11 @@ export const sentences = [
     ["Das sind Stühle. Sie sind sehr schön.", "✓"],
     ["Die sind Stühle. Sie sind sehr schön.", "X"],
     ["Sarah hat aktuell keine Arbeit.", "Sarah currently has no work."],
-    ["Ich habe jetzt leider keine Zeit. === Leider habe ich jetzt keine Zeit. == Jetzt habe iche leider keine Zeit. == Ich habe leider jetzt keine Zeit."]
+    ["Ich habe jetzt leider keine Zeit. === Leider habe ich jetzt keine Zeit. == Jetzt habe iche leider keine Zeit. == Ich habe leider jetzt keine Zeit."],
+    ["Stefan besucht Theo.", "Stefan is visting Theo."],
+    ["Gut, und dir? Schön, dich zu sehen!"],
+    ["Wer ist das?", "Who is this?"],
+    ["Er ist müde und schläft jetzt.", "He's tierd and sleeping now"],
+    ["Achso! Er ist wirklich sehr klein und auch sehr lieb.", "Oh well! He is really too small and also very sweet."],
+    ["Oh! Theo ist verliebt!", "Oh! Theo is is love."],
 ]
