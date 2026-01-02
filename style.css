@@ -48,6 +48,10 @@ td {
     border: 1px solid #858585;
 }
 
+small {
+    text-decoration: underline;
+}
+
 .num {
     text-align: center;
 }

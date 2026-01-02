@@ -16,6 +16,8 @@ export const articles = [
       "Der Verkäufer",
       "Der Kellner",
       "Der Taxifahrer",
+      "Der Beuscher",
+      "Der Tag"
     ],
   },
   {
@@ -50,11 +52,13 @@ export const articles = [
       "Die Kellnerin",
       "Die Taxifahrerin",
       "Die Küche",
+      "Die Besucherin",
+      
     ],
   },
   {
     article: "Die",
     type: "plural",
-    words: ["Die Stühle", "Die Nachbarn"],
+    words: ["Die Stühle", "Die Nachbarn", "Die Tage"],
   },
 ];
