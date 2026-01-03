@@ -14,5 +14,9 @@ export const pronunciations = [
     {
         header: "ä",
         data: ["Pronounce in the middle of the tongue"]
+    },
+    {
+        header: "G",
+        data: ["Prononce 'K' if it's the last of the syllable otherwise normal 'G' sound"]
     }
 ];

@@ -31,4 +31,7 @@ export const sentences = [
     ["Er ist müde und schläft jetzt.", "He's tierd and sleeping now"],
     ["Achso! Er ist wirklich sehr klein und auch sehr lieb.", "Oh well! He is really too small and also very sweet."],
     ["Oh! Theo ist verliebt!", "Oh! Theo is is love."],
+    ["Am Donnerstag kommt der Tisch. == Der Tisch kommt am Donnerstag."],
+    ["Freitag ist mein Lieblingstag"],
+    ["Übermorgen ist Dienstag"]
 ]
