@@ -33,5 +33,6 @@ export const sentences = [
     ["Oh! Theo ist verliebt!", "Oh! Theo is is love."],
     ["Am Donnerstag kommt der Tisch. == Der Tisch kommt am Donnerstag."],
     ["Freitag ist mein Lieblingstag"],
-    ["Übermorgen ist Dienstag"]
+    ["Übermorgen ist Dienstag"],
+    ["Wo == Where, Wer == Who, Was == What"],
 ]
