@@ -9,6 +9,7 @@ const ulSentences = document.getElementById("ulSentences");
 const ulNotes = document.getElementById("ulNotes");
 const divPron = document.getElementById("divPron");
 const tVerbs = document.getElementById("tVerbs");
+const tPartDay = document.getElementById("tPartDay");
 
 articles.forEach(({ article, type, words }) => {
   const tr = document.createElement("tr");
@@ -65,4 +66,16 @@ verbs.forEach((verb, index) => {
   const td = document.createElement("td");
   td.textContent = verb;
   tr.appendChild(td);
+});
+
+const partsDayData = ["Morgen", "Mittag", "Nachmittag", "Abend", "Nacht"];
+partsDayData.forEach((day, index)=> {
+  const tr = document.createElement("tr");
+  
+  tr.innerHTML = `
+    <td>${index == partsDayData.length - 1 ? "Die" : "Der"} ${day}</td>
+    <td>${index == partsDayData.length - 1 ? "In der" : "Am"} ${day}</td>
+    `;
+  
+  tPartDay.appendChild(tr);
 });

@@ -35,4 +35,8 @@ export const sentences = [
     ["Freitag ist mein Lieblingstag"],
     ["Übermorgen ist Dienstag"],
     ["Wo == Where, Wer == Who, Was == What"],
+    ["Wie Uhr ist es? == Wie spät ist es?", "Es ist zehn Uhr am morgen."],
+    ["Wann hast du am Abend Zeit?", "Leider habe ich am Abend keine Zeit."],
+    ["Was machen wir heute? Hast du eine Idee?", "Wir können den park besuchen, denn (because) das Wetter ist schön."],
+    ["Um 20 Uhr können wir einen Film im Kino anschauen, Hast du Lust?", "At 8pm we can watch a movie at the cinema. Are you up for it"]
 ]

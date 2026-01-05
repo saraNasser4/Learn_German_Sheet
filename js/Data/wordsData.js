@@ -17,7 +17,8 @@ export const articles = [
       "Der Kellner",
       "Der Taxifahrer",
       "Der Beuscher",
-      "Der Tag"
+      "Der Tag",
+      "Der Park"
     ],
   },
   {
