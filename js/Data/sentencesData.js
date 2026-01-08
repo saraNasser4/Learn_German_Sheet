@@ -39,5 +39,9 @@ export const sentences = [
     ["Wann hast du am Abend Zeit?", "Leider habe ich am Abend keine Zeit."],
     ["Was machen wir heute? Hast du eine Idee?", "Wir können den park besuchen, denn (because) das Wetter ist schön."],
     ["Um 20 Uhr können wir einen Film im Kino anschauen, Hast du Lust?", "At 8pm we can watch a movie at the cinema. Are you up for it"],
-    ["Die Stadt hat leider keinen Park"]
+    ["Die Stadt hat leider keinen Park"],
+    ["Sie kann jetzt nicht telefonieren."],
+    ["Wir können heute ins Kino oder in den Park gehen."],
+    ["Sie hat keinen Tisch und kein Bett, denn (Because) sie ist neu in Hamburg."],
+    ["Können wir einen Spaziergang machen?"]
 ]
