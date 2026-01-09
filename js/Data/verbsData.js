@@ -5,6 +5,8 @@ export const verbs = [
     "Studieren :)",
     "Wohnen :)",
     "Spielen :)",
+    "Trinken :)",
+
     "Heißen :(",
     "Sein :(",
     "Arbeiten :(",
@@ -12,5 +14,13 @@ export const verbs = [
     "Schlafen :(",
     "Fahren :(",
     "Lesen :(",
-    "können :("
+    "Essen :(",
+    
+    "Auf|stehen :)",
+    "Ein|kaufen :)",
+    "An|rufen :)",
+    "Aus|gehen :)",
+    
+    "Können :(",
+    "Müssen :("
 ]

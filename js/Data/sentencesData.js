@@ -15,7 +15,7 @@ export const sentences = [
     ["Wie arbeiten beide in Frankfurt.", "Both of us works in Frankfurt"],
     ["Arbeitet ihr heute nicht?"],
     ["Was machst du gern in deiner Freizeit?"],
-    ["Sarahs Wohnun is sehr klein, aber sehr schön. Sie (for the wohnung) hat ein Wohnzimmer, eine Küche und ein Schlafzimmer."],
+    ["Sarahs Wohnung is sehr klein, aber sehr schön. Sie (for the wohnung) hat ein Wohnzimmer, eine Küche und ein Schlafzimmer."],
     ["Vater hat jetzt leider keine Zeit, aber er kommt vielleicht nächsten Monat."],
     ["Sie bleibt eine Woche in Hamburg.", "She's staying in Hamburg for a week."],
     ["Habt ihr heute Zeit?"],
@@ -43,5 +43,13 @@ export const sentences = [
     ["Sie kann jetzt nicht telefonieren."],
     ["Wir können heute ins Kino oder in den Park gehen."],
     ["Sie hat keinen Tisch und kein Bett, denn (Because) sie ist neu in Hamburg."],
-    ["Können wir einen Spaziergang machen?"]
+    ["Können wir einen Spaziergang machen?"],
+    ["Stefanie arbeitet viel (≠wenig). aber sie mag ihre neue Arbeitsstelle."],
+    ["Das ist ein typischer Tag in Sarahs Leben: Sie steht um halb neun auf. Dann duscht sie und putzt ihre Zähne."],
+    ["Um halb acht fährt sie zur Arbeit, denn um acht Uhr muss sie dort sein."],
+    ["Sie isst zum Beispiel ein Ei mit Brot oder Müsli mit Milch."],
+    ["Gegen halb eins", "Around 12:30"],
+    ["Sarah steht gerne früh auf"],
+    ["Müsst ihr auch etwas einkaufen?"],
+    ["Sie kaufen dort nicht gerne ein."]
 ]

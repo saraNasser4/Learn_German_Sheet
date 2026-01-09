@@ -13,5 +13,6 @@ export const notes = [
     ["Denn", "To sound German add denn to any question", "Wo wohnt sie denn?"],
     ["Hier", "Here"],
     ["Dort/Da", "There"],
-    ["Akkusativ", "We use it after verbs and some prepositions"]
+    ["Akkusativ", "We use it after verbs and some prepositions"],
+    ["Kaufen oder Einkaufen", "if you're buying a specific thing use 1 if not just shopping or so 2"],
 ];

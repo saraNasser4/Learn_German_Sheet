@@ -18,7 +18,8 @@ export const articles = [
       "Der Taxifahrer",
       "Der Beuscher",
       "Der Tag",
-      "Der Park"
+      "Der Park",
+      "Der Job",
     ],
   },
   {
@@ -54,7 +55,10 @@ export const articles = [
       "Die Taxifahrerin",
       "Die Küche",
       "Die Besucherin",
-      "Die Stadt"
+      "Die Stadt",
+      "Die Arbeit",
+      "Die Arbeitsstelle",
+      "Die Stelle",
     ],
   },
   {
