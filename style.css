@@ -55,3 +55,23 @@ small {
 .num {
     text-align: center;
 }
+
+#lineDiv {
+  display: flex;
+  justify-content: space-around;
+  span {
+      cursor: pointer;
+  }
+}
+
+#bar {
+  height: 4px;
+  background: #aaa;
+  margin-top: 6px;
+}
+
+#fill {
+  height: 4px;
+  width: 0;
+  background: black;
+}

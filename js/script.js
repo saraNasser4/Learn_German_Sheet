@@ -10,6 +10,7 @@ const ulNotes = document.getElementById("ulNotes");
 const divPron = document.getElementById("divPron");
 const tVerbs = document.getElementById("tVerbs");
 const tPartDay = document.getElementById("tPartDay");
+const lineDiv = document.getElementById("lineDiv");
 
 articles.forEach(({ article, type, words }) => {
   const tr = document.createElement("tr");
@@ -79,3 +80,11 @@ partsDayData.forEach((day, index)=> {
   
   tPartDay.appendChild(tr);
 });
+
+const adv = ["Nie", "Fast nie", "Selten", "Manchmal", "Oft", "Meistens", "Fast immer", "Immer (Jeden Tag)"]
+adv.forEach((d)=> {
+    const span = document.createElement("span");
+
+    span.innerHTML = d;
+    lineDiv.appendChild(span)
+  })

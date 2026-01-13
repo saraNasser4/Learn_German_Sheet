@@ -64,6 +64,6 @@ export const articles = [
   {
     article: "Die",
     type: "plural",
-    words: ["Die Stühle", "Die Nachbarn", "Die Tage"],
+    words: ["Die Stühle", "Die Nachbarn", "Die Tage", "Die Pflanzen"],
   },
 ];

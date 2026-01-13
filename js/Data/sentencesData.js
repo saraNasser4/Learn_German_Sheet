@@ -35,7 +35,7 @@ export const sentences = [
     ["Freitag ist mein Lieblingstag"],
     ["Übermorgen ist Dienstag"],
     ["Wo == Where, Wer == Who, Was == What"],
-    ["Wie Uhr ist es? == Wie spät ist es?", "Es ist zehn Uhr am morgen."],
+    ["Wie viel Uhr ist es? == Wie spät ist es?", "Es ist fünfzehn Uhr dreißig  (formal), Es ist halb fünf (informal)"],
     ["Wann hast du am Abend Zeit?", "Leider habe ich am Abend keine Zeit."],
     ["Was machen wir heute? Hast du eine Idee?", "Wir können den park besuchen, denn (because) das Wetter ist schön."],
     ["Um 20 Uhr können wir einen Film im Kino anschauen, Hast du Lust?", "At 8pm we can watch a movie at the cinema. Are you up for it"],
@@ -51,5 +51,6 @@ export const sentences = [
     ["Gegen halb eins", "Around 12:30"],
     ["Sarah steht gerne früh auf"],
     ["Müsst ihr auch etwas einkaufen?"],
-    ["Sie kaufen dort nicht gerne ein."]
+    ["Sie kaufen dort nicht gerne ein."],
+    ["Wir essen auch sehr oft Steak!"]
 ]
