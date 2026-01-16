@@ -20,6 +20,9 @@ export const articles = [
       "Der Tag",
       "Der Park",
       "Der Job",
+      "Der Fernseher",
+      "Der Teppich",
+      "Der Esszimmertisch",
     ],
   },
   {
@@ -34,6 +37,7 @@ export const articles = [
       "Das Schlafzimmer",
       "Das Esszimmer",
       "Das Regal",
+      "Das Restaurant"
     ],
   },
   {

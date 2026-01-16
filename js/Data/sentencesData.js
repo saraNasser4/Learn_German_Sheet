@@ -52,5 +52,8 @@ export const sentences = [
     ["Sarah steht gerne früh auf"],
     ["Müsst ihr auch etwas einkaufen?"],
     ["Sie kaufen dort nicht gerne ein."],
-    ["Wir essen auch sehr oft Steak!"]
+    ["Wir essen auch sehr oft Steak!"],
+    ["Herr Müller libt moderne Technologie, aber Frau Müller kauft selten neue Geräte für ihn."],
+    ["Abends (=Fast jeden Abend) sehen sie oft zusammen fern."],
+    ["Hier spielen sie mittwochs oft Karten mit Sarah. Sarah ist eine sehr sympathische und lustige Nachbarin"]
 ]
