@@ -37,7 +37,9 @@ export const articles = [
       "Das Schlafzimmer",
       "Das Esszimmer",
       "Das Regal",
-      "Das Restaurant"
+      "Das Restaurant",
+      "Das Hendy",
+      "Das Café"
     ],
   },
   {
@@ -63,6 +65,7 @@ export const articles = [
       "Die Arbeit",
       "Die Arbeitsstelle",
       "Die Stelle",
+      "Die Bar"
     ],
   },
   {

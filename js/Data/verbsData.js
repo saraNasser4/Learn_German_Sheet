@@ -20,6 +20,7 @@ export const verbs = [
     "Ein|kaufen :)",
     "An|rufen :)",
     "Aus|gehen :)",
+    "Fern|sehen :)",
     
     "Können :(",
     "Müssen :("

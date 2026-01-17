@@ -15,4 +15,6 @@ export const notes = [
     ["Dort/Da", "There"],
     ["Akkusativ", "We use it after verbs and some prepositions"],
     ["Kaufen oder Einkaufen", "if you're buying a specific thing use 1 if not just shopping or so 2"],
+    ["Es gibt + accusative", "There is/are", "Es gibt einen Park in Hamburg."],
+    ["Days of the Week & Parts of the day", "Frau Nasser ruft abens oft ihre Eltern an.", "Not with Am Wochenede tho"]
 ];

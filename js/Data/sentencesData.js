@@ -55,5 +55,9 @@ export const sentences = [
     ["Wir essen auch sehr oft Steak!"],
     ["Herr Müller libt moderne Technologie, aber Frau Müller kauft selten neue Geräte für ihn."],
     ["Abends (=Fast jeden Abend) sehen sie oft zusammen fern."],
-    ["Hier spielen sie mittwochs oft Karten mit Sarah. Sarah ist eine sehr sympathische und lustige Nachbarin"]
+    ["Hier spielen sie mittwochs oft Karten mit Sarah. Sarah ist eine sehr sympathische und lustige Nachbarin"],
+    ["Kannst du mich heute Abend bitte anrufen?"],
+    ["Wo ist die Katze?", "Ich sehe sie nicht."],
+    ["Stefan ruft uns selten an."],
+    ["In der Wohnung gibt es viele Stühle."]
 ]
