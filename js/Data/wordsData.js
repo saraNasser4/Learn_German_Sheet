@@ -65,12 +65,24 @@ export const articles = [
       "Die Arbeit",
       "Die Arbeitsstelle",
       "Die Stelle",
-      "Die Bar"
+      "Die Bar",
+      "Die Lust",
+      "Die Familie"
     ],
   },
   {
     article: "Die",
     type: "plural",
-    words: ["Die Stühle", "Die Nachbarn", "Die Tage", "Die Pflanzen"],
+    words: [
+      "Die Stühle",
+      "Die Nachbarn", 
+      "Die Tage", 
+      "Die Pflanzen", 
+      "Die Zimmer", 
+      "Die Betten", 
+      "Die Tische", 
+      "Die Regale", 
+      "Die Familien",
+    ],
   },
 ];

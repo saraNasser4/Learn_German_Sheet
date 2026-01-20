@@ -6,6 +6,7 @@ export const verbs = [
     "Wohnen :)",
     "Spielen :)",
     "Trinken :)",
+    "Schmechken :) 'With adj always'",
 
     "Heißen :(",
     "Sein :(",
@@ -20,7 +21,7 @@ export const verbs = [
     "Ein|kaufen :)",
     "An|rufen :)",
     "Aus|gehen :)",
-    "Fern|sehen :)",
+    "Fern|sehen :(",
     
     "Können :(",
     "Müssen :("

@@ -10,6 +10,7 @@ const ulNotes = document.getElementById("ulNotes");
 const divPron = document.getElementById("divPron");
 const tVerbs = document.getElementById("tVerbs");
 const tPartDay = document.getElementById("tPartDay");
+const tPersonalPro = document.getElementById("tPersonalPro");
 const lineDiv = document.getElementById("lineDiv");
 
 articles.forEach(({ article, type, words }) => {
@@ -24,14 +25,21 @@ articles.forEach(({ article, type, words }) => {
   tWords.appendChild(tr);
 });
 
-sentences.forEach((sentence)=> {
-  const lis = document.createElement("li");
+sentences.forEach((sentence) => {
+  const li = document.createElement("li");
 
-  lis.innerHTML = `
-  <strong>${sentence[0]}</strong>
-  ${sentence[1] !== undefined ? `→ ${sentence[1]}` : ""}
+  li.innerHTML = `
+    <strong>${sentence.de}</strong>
+    ${
+      sentence.en
+        ? `→ ${sentence.en}`
+        : sentence.note
+        ? `→ ${sentence.note}`
+        : ""
+    }
   `;
-  ulSentences.appendChild(lis);
+
+  ulSentences.appendChild(li);
 });
 
 notes.forEach((note) => {
@@ -88,3 +96,16 @@ adv.forEach((d)=> {
     span.innerHTML = d;
     lineDiv.appendChild(span)
   })
+
+const nominative = ["Ich", "Du", "Er/Sie/Es", "Wir", "Ihr", "sie/Sie"];
+const accusative =["Mich", "Dich", "Ihn/Sie/Es", "Uns", "Euch", "sie/Sie"];
+partsDayData.forEach((day, index)=> {
+  const tr = document.createElement("tr");
+  
+  tr.innerHTML = `
+    <td>${index == partsDayData.length - 1 ? "Die" : "Der"} ${day}</td>
+    <td>${index == partsDayData.length - 1 ? "In der" : "Am"} ${day}</td>
+    `;
+  
+  tPartDay.appendChild(tr);
+});
