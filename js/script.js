@@ -42,16 +42,17 @@ sentences.forEach((sentence) => {
   ulSentences.appendChild(li);
 });
 
-notes.forEach((note) => {
-  const lin = document.createElement("li");
-  
-  lin.innerHTML = `
-  <strong>${note?.[0]}</strong>
-  → ${note?.[1]}
-  ${note?.[2] !== undefined ? `<small>"${note?.[2]}"</small>` : ""}
+notes.forEach((note)=> {
+  const li = document.createElement("li");
+
+  li.innerHTML = `
+    <strong>${note.head}</strong>
+    → ${note.explanation}
+    ${note?.example ? `<small>"${note.example}"</small>` : ""}
   `;
-  ulNotes.appendChild(lin);
-});
+
+  ulNotes.appendChild(li);
+})
 
 pronunciations.forEach(({ header, data }) => {
   const h3 = document.createElement("h3");
