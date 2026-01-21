@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>German A1 – Articles</title>
+
+  <style>
+    :root {
+      --accent: #66e3ff;
+      --bg: #121212;
+      --card-bg: #1e1e1e;
+      --muted: rgba(255, 255, 255, 0.65);
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      color: var(--accent);
+      margin-bottom: 2rem;
+    }
+
+    /* ===== Wrapper keeps dots fixed ===== */
+    .carousel-wrapper {
+      position: relative;
+      width: 420px;
+      height: 80vh;
+      max-height: 600px;
+    }
+
+    .article-carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      height: 100%;
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      font-size: 2.5rem;
+      cursor: pointer;
+      color: var(--accent);
+      padding: 0 0.5rem;
+      user-select: none;
+    }
+
+    .nav-btn:hover {
+      opacity: 0.85;
+    }
+
+    /* ===== Card ===== */
+    .card {
+      width: 100%;
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+
+      max-height: 75vh;        /* 👈 important */
+      display: flex;
+      flex-direction: column;
+
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .card.fade-out {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    #articleTitle {
+      font-size: 2.2rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    #articleType {
+      margin: 0.3rem 0 1rem;
+      text-align: center;
+      opacity: 0.7;
+      text-transform: capitalize;
+    }
+
+    /* ===== Scrollable content ===== */
+    .word-container {
+      overflow-y: auto;
+      padding-right: 4px;
+      margin-top: 0.5rem;
+    }
+
+    .word-container::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .word-container::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 4px;
+    }
+
+    #wordList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #wordList li {
+      margin: 0.35rem 0;
+    }
+
+    /* ===== Dots ===== */
+    .dots {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 6px;
+      border-radius: 50%;
+      background: #555;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background: var(--accent);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Rezension für das Niveau A1</h1>
+
+  <div class="carousel-wrapper">
+    <div class="article-carousel">
+      <button class="nav-btn" id="prevBtn">‹</button>
+
+      <div class="card" id="card">
+        <h2 id="articleTitle"></h2>
+        <p id="articleType"></p>
+
+        <div class="word-container">
+          <ul id="wordList"></ul>
+        </div>
+      </div>
+
+      <button class="nav-btn" id="nextBtn">›</button>
+    </div>
+
+    <div class="dots" id="dots"></div>
+  </div>
+
+  <script>
+    const articles = [
+      {
+        article: "Der",
+        type: "masculine",
+        words: [
+          "Der Tisch","Der Nachbar","Der Lehrer","Der Anwalt","Der Architekt",
+          "Der IT-Experte","Der Sohn","Der Mann","Der Vater","Der Arzt",
+          "Der Verkäufer","Der Kellner","Der Taxifahrer","Der Beuscher",
+          "Der Tag","Der Park","Der Job","Der Fernseher","Der Teppich",
+          "Der Esszimmertisch",
+        ],
+      },
+      {
+        article: "Das",
+        type: "neutral",
+        words: [
+          "Das Bett","Das Mädchen","Das Kind","Das Baby","Das Wohnzimmer",
+          "Das Schlafzimmer","Das Esszimmer","Das Regal","Das Restaurant",
+          "Das Hendy","Das Café",
+        ],
+      },
+      {
+        article: "Die",
+        type: "feminine",
+        words: [
+          "Die Couch","Die Nachbarin","Die Lehrerin","Die Anwältin",
+          "Die Architektin","Die IT-Expertin","Die Tochter","Die Frau",
+          "Die Mutter","Die Ärztin","Die Verkäuferin","Die Kellnerin",
+          "Die Taxifahrerin","Die Küche","Die Besucherin","Die Stadt",
+          "Die Arbeit","Die Arbeitsstelle","Die Stelle","Die Bar",
+          "Die Lust","Die Familie",
+        ],
+      },
+      {
+        article: "Die",
+        type: "plural",
+        words: [
+          "Die Stühle","Die Nachbarn","Die Tage","Die Pflanzen",
+          "Die Zimmer","Die Betten","Die Tische","Die Regale","Die Familien",
+        ],
+      },
+    ];
+
+    let currentIndex = 0;
+
+    const card = document.getElementById("card");
+    const articleTitle = document.getElementById("articleTitle");
+    const articleType = document.getElementById("articleType");
+    const wordList = document.getElementById("wordList");
+    const dotsContainer = document.getElementById("dots");
+
+    function renderCard(index) {
+      const data = articles[index];
+
+      articleTitle.textContent = data.article;
+      articleType.textContent = data.type;
+
+      wordList.innerHTML = "";
+      data.words.forEach(word => {
+        const li = document.createElement("li");
+        li.textContent = word;
+        wordList.appendChild(li);
+      });
+
+      updateDots(index);
+    }
+
+    function createDots() {
+      dotsContainer.innerHTML = "";
+      articles.forEach((_, i) => {
+        const dot = document.createElement("span");
+        dot.className = "dot";
+        dot.addEventListener("click", () => {
+          currentIndex = i;
+          renderCard(currentIndex);
+        });
+        dotsContainer.appendChild(dot);
+      });
+    }
+
+    function updateDots(activeIndex) {
+      document.querySelectorAll(".dot").forEach((dot, i) => {
+        dot.classList.toggle("active", i === activeIndex);
+      });
+    }
+
+    function changeCard(direction) {
+      card.classList.add("fade-out");
+
+      setTimeout(() => {
+        currentIndex =
+          (currentIndex + direction + articles.length) % articles.length;
+
+        renderCard(currentIndex);
+        card.classList.remove("fade-out");
+      }, 200);
+    }
+
+    document.getElementById("prevBtn").onclick = () => changeCard(-1);
+    document.getElementById("nextBtn").onclick = () => changeCard(1);
+
+    document.addEventListener("keydown", e => {
+      if (e.key === "ArrowLeft") changeCard(-1);
+      if (e.key === "ArrowRight") changeCard(1);
+    });
+
+    createDots();
+    renderCard(currentIndex);
+  </script>
+</body>
+</html>
