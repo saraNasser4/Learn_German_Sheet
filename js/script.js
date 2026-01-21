@@ -1,5 +1,5 @@
 import { articles } from './Data/wordsData.js';
-import { sentences } from './Data/sentencesData.js';
+import { sentences, tagColors } from './Data/sentencesData.js';
 import { notes } from './Data/notesData.js';
 import { pronunciations } from './Data/pronunciationsData.js';
 import { verbs } from "./Data/verbsData.js";
@@ -74,6 +74,9 @@ sentences.forEach((sentence) => {
         : ""
     }
   `;
+  if (sentence.tag && tagColors[sentence.tag]) {
+    li.style.borderLeft = `6px solid ${tagColors[sentence.tag]}`;
+  }
 
   ulSentences.appendChild(li);
 });
