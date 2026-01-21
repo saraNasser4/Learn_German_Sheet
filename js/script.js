@@ -14,17 +14,52 @@ const tPartDay = document.getElementById("tPartDay");
 const tPersonalPro = document.getElementById("tPersonalPro");
 const lineDiv = document.getElementById("lineDiv");
 
-articles.forEach(({ article, type, words }) => {
-  const tr = document.createElement("tr");
-  
-  tr.innerHTML = `
-  <td style={ text-wrap: nowrap; }><strong>${article}</strong> (${type})</td>  
-  <td>${words.join(", ")}</td>
-  <td class="num">${words.length}</td>
-  `;
-  
-  tWords.appendChild(tr);
+
+let currentIndex = 0;
+
+const card = document.getElementById("card");
+const articleTitle = document.getElementById("articleTitle");
+const articleType = document.getElementById("articleType");
+const wordList = document.getElementById("wordList");
+const wordsCount = document.getElementById("wordsCount");
+    
+function renderCard(index) {
+  const data = articles[index];
+  articleTitle.textContent = data.article;
+  articleTitle.style.color = data.color;
+  wordsCount.textContent = data.words.length
+  wordsCount.style.backgroundColor = data.color;
+  articleType.textContent = data.type;
+  wordList.innerHTML = "";
+
+  data.words.forEach(word => {
+    const li = document.createElement("li");
+    li.textContent = word;
+    wordList.appendChild(li);
+  });
+}
+
+function changeCard(direction) {
+  card.classList.add("fade-out");
+
+  setTimeout(() => {
+     currentIndex =
+        (currentIndex + direction + articles.length) % articles.length;
+
+     renderCard(currentIndex);
+     card.classList.remove("fade-out");
+  }, 200);
+}
+
+document.getElementById("prevBtn").onclick = () => changeCard(-1);
+document.getElementById("nextBtn").onclick = () => changeCard(1);
+
+document.addEventListener("keydown", e => {
+    if (e.key === "ArrowLeft") changeCard(-1);
+    if (e.key === "ArrowRight") changeCard(1);
 });
+
+renderCard(currentIndex);
 
 sentences.forEach((sentence) => {
   const li = document.createElement("li");

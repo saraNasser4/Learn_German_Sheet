@@ -10,16 +10,22 @@
         <h1>Rezension für das Niveau A1</h1>
         <div>
             <h2>Wörter:</h2>
-            <table border="1" cellpadding="8" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Article</th>
-                        <th>Words</th>
-                        <th>Count</th>
-                    </tr>
-                </thead>
-                <tbody id="tWords"></tbody>
-            </table>
+            <div class="article-carousel">
+                <button class="nav-btn" id="prevBtn">‹</button>
+
+                <div class="card" id="card">
+                    <span id="wordsCount"></span>
+                    <h2 id="articleTitle"></h2>
+                    <p id="articleType"></p>
+
+                    <div class="word-container">
+                        <ul id="wordList"></ul>
+                    </div>
+                </div>
+
+                <button class="nav-btn" id="nextBtn">›</button>
+            </div>
+            
         </div>
 
         <div>
