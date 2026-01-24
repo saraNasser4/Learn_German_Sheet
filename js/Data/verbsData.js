@@ -24,5 +24,6 @@ export const verbs = [
     "Fern|sehen :(",
     
     "Können :(",
-    "Müssen :("
+    "Müssen :(",
+    "Möchten :(",
 ]

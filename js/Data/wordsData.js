@@ -5,6 +5,7 @@ export const articles = [
     color: "#4A90E2",
     words: [
       "Der Tisch -e",
+      "Der Stuhl -¨e",
       "Der Nachbar -n",
       "Der Lehrer -",
       "Der Anwalt -¨e",
@@ -40,7 +41,7 @@ export const articles = [
       "Das Esszimmer -",
       "Das Regal -e",
       "Das Restaurant -s",
-      "Das Hendy -s",
+      "Das Handy -s",
       "Das Café -s",
     ],
   },
@@ -49,7 +50,7 @@ export const articles = [
     type: "feminine",
     color: "#E94B5A",
     words: [
-      "Die Couch -s",
+      "Die Couch -es",
       "Die Nachbarin -nen",
       "Die Lehrerin -nen",
       "Die Anwältin -nen",
@@ -72,16 +73,5 @@ export const articles = [
       "Die Lust -¨e",
       "Die Familie -n"
     ],
-  },
-  {
-    article: "Die",
-    type: "plural",
-    color: "#9B59B6",
-    words: [
-      "Die Stühle",
-      "Die Nachbarn", 
-      "Die Tage", 
-      "Die Pflanzen", 
-    ],
-  },
+  },  
 ];

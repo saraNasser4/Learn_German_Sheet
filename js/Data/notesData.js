@@ -79,8 +79,12 @@ export const notes = [
     },
     { 
         head:"Viel/e", 
-        explanation: "Viel + sing. non, Viele + pl. non, verb + viel", 
+        explanation: "Viel + sing. non, Viele + pl. non, Viel. 'Not in front of a non'", 
         example: "Viel Stress. Viele Anrufe. Arbitie viel"
     },
-    
+    {
+        head: "Wenig/e",
+        explanation: "Wenig + sing. non, Wenig + pl. non, Wenig. 'Not in front of a non'",
+        example: "Wenig Stress. Wenige Anrufe. Arbitie viel"
+    },    
 ];

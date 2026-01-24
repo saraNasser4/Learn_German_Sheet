@@ -64,7 +64,7 @@ export const sentences = [
         tag: "verb"
     },
     {
-        de: "Was bist do von Beruf?",
+        de: "Was bist du von Beruf?",
         note: "Ich bin Buchhalterin., Ich bin Buchhalterin von Beruf., Ich arbeite als Buchhalterin.",
         tag: "question"
     },
@@ -73,7 +73,7 @@ export const sentences = [
         tag: "question"
     },
     {
-        de: "Wie arbeiten beide in Frankfurt.", 
+        de: "Wir arbeiten beide in Frankfurt.", 
         en: "Both of us works in Frankfurt",
         tag: "verb"
     },
@@ -86,7 +86,7 @@ export const sentences = [
         tag: "question"
     },
     {
-        de: "Sarahs Wohnung is sehr klein, aber sehr schön. Sie (for the wohnung) hat ein Wohnzimmer, eine Küche und ein Schlafzimmer.",
+        de: "Sarahs Wohnung ist sehr klein, aber sehr schön. Sie (for the wohnung) hat ein Wohnzimmer, eine Küche und ein Schlafzimmer.",
         tag: "phrase"
     },
     {
@@ -127,7 +127,7 @@ export const sentences = [
         tag: "phrase"
     },
     {
-        de: "Ich habe jetzt leider keine Zeit. === Leider habe ich jetzt keine Zeit. == Jetzt habe iche leider keine Zeit. == Ich habe leider jetzt keine Zeit.",
+        de: "Ich habe jetzt leider keine Zeit. === Leider habe ich jetzt keine Zeit. == Jetzt habe ich leider keine Zeit. == Ich habe leider jetzt keine Zeit.",
         tag: "phrase"
     },
     {
@@ -250,10 +250,10 @@ export const sentences = [
     },
     {
         de: "Wir essen auch sehr oft Steak!",
-        tag: "pharse"
+        tag: "phrase"
     },
     {
-        de: "Herr Müller libt moderne Technologie, aber Frau Müller kauft selten neue Geräte für ihn.",
+        de: "Herr Müller liebt moderne Technologie, aber Frau Müller kauft selten neue Geräte für ihn.",
         tag: "phrase"
     },
     {
@@ -301,5 +301,9 @@ export const sentences = [
     {
         de: "Ich möchte einen Tisch für heute Aben um Viertel vor acht reservieren.",
         tag: "phrase"
+    },
+    {
+        de: "Er möchte heute nicht ausgehen.",
+        tag: "verb"
     },
 ]
