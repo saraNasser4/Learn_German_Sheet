@@ -306,4 +306,17 @@ export const sentences = [
         de: "Er möchte heute nicht ausgehen.",
         tag: "verb"
     },
+    {
+        de: "Moment, eine Sekunde bitte!",
+        tag: "phrase"
+    },
+    {
+        de: "Ein Jahr hat 12 Monate. Ein Jahr hat 365 Tage, aber manchmal hat ein Jahr 366 Tage.",
+        tag: "phrase"
+    },
+    {
+        de: "(Wann - Um wie viel Uhr - Wie spät) gehen wir ins Restaurant?",
+        note: "Um Viertel vor acht gehen wir ins Restaurant. OR Wir gehen um Viertel vor acht ins Restaurant.",
+        tag: "question"
+    },
 ]

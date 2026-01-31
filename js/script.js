@@ -4,8 +4,8 @@ import { notes } from './Data/notesData.js';
 import { pronunciations } from './Data/pronunciationsData.js';
 import { verbs } from "./Data/verbsData.js";
 import { personalData } from "./Data/personalData.js";
+import { timeData } from './Data/timeData.js';
 
-const tWords = document.getElementById("tWords");
 const ulSentences = document.getElementById("ulSentences");
 const ulNotes = document.getElementById("ulNotes");
 const divPron = document.getElementById("divPron");
@@ -13,6 +13,7 @@ const tVerbs = document.getElementById("tVerbs");
 const tPartDay = document.getElementById("tPartDay");
 const tPersonalPro = document.getElementById("tPersonalPro");
 const lineDiv = document.getElementById("lineDiv");
+const tTimeSpoken = document.getElementById("tTimeSpoken");
 
 
 let currentIndex = 0;
@@ -146,3 +147,17 @@ personalData.forEach(({nom, acc, dat})=> {
   `;
   tPersonalPro.appendChild(tr);
 })
+
+timeData.forEach(({time, formal, informal, uhr})=> {
+  const tr = document.createElement("tr");
+  const uhrText = uhr ? "" : "<s>Uhr</s>";
+
+  tr.innerHTML = `
+    <td>${time}</td>
+    <td>Es ist ${formal}</td>
+    <td>Es ist ${informal}${uhrText}</td>
+  `;
+
+  tTimeSpoken.appendChild(tr)
+});
+

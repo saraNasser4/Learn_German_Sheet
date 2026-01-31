@@ -19,12 +19,13 @@ export const articles = [
       "Der Kellner -",
       "Der Taxifahrer -",
       "Der Besucher -",
-      "Der Tag -e",
       "Der Park -s",
       "Der Job -s",
       "Der Fernseher -",
       "Der Teppich -e",
       "Der Esszimmertisch -e",
+      "Der Tag -e",
+      "Der Monat -e"
     ],
   },
   {
@@ -43,6 +44,7 @@ export const articles = [
       "Das Restaurant -s",
       "Das Handy -s",
       "Das Café -s",
+      "Das Jahr -e"
     ],
   },
   {
@@ -71,7 +73,11 @@ export const articles = [
       "Die Stelle -n",
       "Die Bar -s",
       "Die Lust -¨e",
-      "Die Familie -n"
+      "Die Familie -n",
+      "Die Sekunde -n",
+      "Die Minute -n",
+      "Die Stunde -n",
+      "Die Woche -n",
     ],
   },  
 ];
