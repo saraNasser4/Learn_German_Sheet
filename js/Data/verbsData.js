@@ -16,6 +16,7 @@ export const verbs = [
     "Fahren :(",
     "Lesen :(",
     "Essen :(",
+    "nehmen :(",
     
     "Auf|stehen :)",
     "Ein|kaufen :)",

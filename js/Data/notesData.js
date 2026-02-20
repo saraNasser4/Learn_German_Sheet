@@ -85,6 +85,6 @@ export const notes = [
     {
         head: "Wenig/e",
         explanation: "Wenig + sing. non, Wenig + pl. non, Wenig. 'Not in front of a non'",
-        example: "Wenig Stress. Wenige Anrufe. Arbitie viel"
+        example: "Wenig Stress. Wenige Anrufe. Arbitie wenig."
     },    
 ];

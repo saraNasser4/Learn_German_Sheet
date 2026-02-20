@@ -44,7 +44,8 @@ export const articles = [
       "Das Restaurant -s",
       "Das Handy -s",
       "Das Café -s",
-      "Das Jahr -e"
+      "Das Jahr -e",
+      "Das gericht -e"
     ],
   },
   {

@@ -319,4 +319,23 @@ export const sentences = [
         note: "Um Viertel vor acht gehen wir ins Restaurant. OR Wir gehen um Viertel vor acht ins Restaurant.",
         tag: "question"
     },
+    {
+        de: "Frau Maier muss aktuell viel arbeiten. Sie ist ärztin von Beruf",
+        en: "Ms Maier currently has to work a lot. she is a doctor.",
+        tag: "phrase"
+    },
+    {
+        de: "Herr Maier hat jetzt wieder eine Arbeitsstelle und hat abends auch keine Lust zu kochen.",
+        en: "Wieder == Again",
+        tag: "phrase"
+    },
+    {
+        de: "Ich bin noch nicht ganz sicher. Vielleicht die Pasta mit Pilzen und Sahnesoße.",
+        en: "I'm not quite sure yet. Maybe the pasta with mushrooms and cream sauce.",
+        tag: "phrase"
+    },
+    {
+        de: "Ich bin noch nicht ganz sicher.",
+        note: "==! Ich bin immer noch ganz unsicher."
+    }
 ]
