@@ -15,7 +15,6 @@ const tPersonalPro = document.getElementById("tPersonalPro");
 const lineDiv = document.getElementById("lineDiv");
 const tTimeSpoken = document.getElementById("tTimeSpoken");
 
-
 let currentIndex = 0;
 
 const card = document.getElementById("card");

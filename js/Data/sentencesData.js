@@ -336,6 +336,12 @@ export const sentences = [
     },
     {
         de: "Ich bin noch nicht ganz sicher.",
-        note: "==! Ich bin immer noch ganz unsicher."
-    }
+        note: "==! Ich bin immer noch ganz unsicher.",
+        tag: "verb"
+    },
+    {
+        de: "ich hätte gern den frischen lachs mit ofenkartoffeln, aber bitte ohne Zwiebeln. Geht das?",
+        note: "And I would like the fresh salmon with baked potatoes, but without onions please. Is that possible?",
+        tag: "phrase"
+    },
 ]

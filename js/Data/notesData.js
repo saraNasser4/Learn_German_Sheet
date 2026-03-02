@@ -86,5 +86,14 @@ export const notes = [
         head: "Wenig/e",
         explanation: "Wenig + sing. non, Wenig + pl. non, Wenig. 'Not in front of a non'",
         example: "Wenig Stress. Wenige Anrufe. Arbitie wenig."
-    },    
+    },  
+    {
+        head: "Ohne & Mit",
+        explanation: "Ohne w Akkusativ, Mit w Dative"
+    },
+    {
+        head: "Experssions with Nullartikel",
+        explanation: "Lust Haben, Spaß Haben, Glück Haben, Zeit Haben",
+        example: "Er hat Lust, in den Park zu gehen. Der Hund Bello hat im Park immer Spaß. Wohnst du in Heidelberg? Du hast wirklich Glück!. Morgen hat Stefanie endlich Zeit."
+    }
 ];
